@@ -45,4 +45,4 @@ To run this project locally, follow these steps:
 
 Here’s a screenshot of the application:
 
-![Weather App Screenshot](src/Assets/Images/Assignment.png)
+![Weather App Screenshot](src/Assests/Images/AssignmentPhoto.png)
