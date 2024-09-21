@@ -54,6 +54,7 @@ export default function Home() {
   };
 
   const handleError = (error) => {
+    console.log(error);
     toast.error(error?.response?.data?.error?.message || DEFAULT_ERROR_MESSAGE);
   };
 
