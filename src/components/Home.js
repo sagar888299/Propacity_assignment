@@ -22,7 +22,7 @@ import {
 } from "./Constant";
 
 const apiKey = process.env.REACT_APP_WEATHER_API_KEY;
-const weatherUrl = `http://api.weatherapi.com/v1/forecast.json?key=${apiKey}`;
+const weatherUrl = `https://api.weatherapi.com/v1/forecast.json?key=${apiKey}`;
 
 export default function Home() {
   const [city, setCity] = useState(DEFAULT_CITY);
