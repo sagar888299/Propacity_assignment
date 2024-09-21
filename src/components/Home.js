@@ -1,4 +1,4 @@
-import { useEffect, useState, useRef } from "react";
+import { useEffect, useState, useRef, useCallback } from "react";
 import { ToastContainer, toast } from "react-toastify";
 import axios from "axios";
 import "react-toastify/dist/ReactToastify.css";
@@ -33,7 +33,7 @@ export default function Home() {
   const [isCelsius, setIsCelsius] = useState(false);
   const hourlyRef = useRef(null);
 
-  const fetchWeatherData = async (city) => {
+  const fetchWeatherData = useCallback(async (city) => {
     setIsLoading(true);
     try {
       const response = await axios.get(
@@ -46,7 +46,7 @@ export default function Home() {
     } finally {
       setIsLoading(false);
     }
-  };
+  }, []);
 
   const saveToLocalStorage = (city, data) => {
     localStorage.setItem(LOCAL_STORAGE_CITY_KEY, city);
@@ -65,8 +65,10 @@ export default function Home() {
     if (cachedCity && cachedWeatherData) {
       setCity(cachedCity);
       setWeatherData(JSON.parse(cachedWeatherData));
+    } else {
+      fetchWeatherData(DEFAULT_CITY); // Fetch weather data for the default city
     }
-  }, []);
+  }, [fetchWeatherData]); 
 
   const handleSearch = (e) => {
     e.preventDefault();
