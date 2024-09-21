@@ -4,10 +4,9 @@
 - [Overview](#overview)
 - [Technologies Used](#technologies-used)
 - [Installation](#installation)
-- [Usage](#usage)
 - [Features](#features)
 - [API](#api)
-- [License](#license)
+- [ScreenShots](#screenshot)
 
 ## Overview
 This Weather Forecast Application allows users to search for weather information by city. It provides current weather conditions, hourly forecasts, and a five-day forecast. The application is built using React and integrates with the Weather API for real-time data.
@@ -38,8 +37,12 @@ To run this project locally, follow these steps:
     
    npm start
 
+## API
+
+ Weather API from weatherapi.com
+
 ## Screenshot
 
 Here’s a screenshot of the application:
 
-![Weather App Screenshot](assets/Assignment.png)
+![Weather App Screenshot](src/assets/images/Assignment.png)
