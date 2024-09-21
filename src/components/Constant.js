@@ -1,0 +1,75 @@
+const CITIES = [
+  "New York",
+  "Los Angeles",
+  "Chicago",
+  "Houston",
+  "Phoenix",
+  "Philadelphia",
+  "San Antonio",
+  "San Diego",
+  "Dallas",
+  "San Jose",
+  "Austin",
+  "Jacksonville",
+  "San Francisco",
+  "Columbus",
+  "Fort Worth",
+  "Indianapolis",
+  "Charlotte",
+  "Seattle",
+  "Denver",
+  "Washington D.C.",
+  "Boston",
+  "Mumbai",
+  "Delhi",
+  "Bengaluru",
+  "Kolkata",
+  "Chennai",
+  "Hyderabad",
+  "Ahmedabad",
+  "Pune",
+  "Jaipur",
+  "Surat",
+  "Lucknow",
+  "Kanpur",
+  "Nagpur",
+  "Visakhapatnam",
+  "Indore",
+  "Thane",
+  "Chandigarh",
+  "Coimbatore",
+  "Guwahati",
+  "Agra",
+  "Vadodara",
+  "Tokyo",
+  "London",
+  "Paris",
+  "Berlin",
+  "Rome",
+  "Sydney",
+  "Toronto",
+  "Cape Town",
+  "Bangkok",
+  "Singapore",
+];
+
+const DEFAULT_CITY = "Delhi";
+const DAYS_FORECAST = 5;
+const AQI = "no";
+const ALERTS = "no";
+const LOCAL_STORAGE_CITY_KEY = "lastSearchedCity";
+const LOCAL_STORAGE_DATA_KEY = "weatherData";
+const DEFAULT_ERROR_MESSAGE = "Error fetching data";
+const SMOOTH = "smooth";
+
+export {
+  CITIES,
+  DEFAULT_CITY,
+  ALERTS,
+  AQI,
+  LOCAL_STORAGE_CITY_KEY,
+  LOCAL_STORAGE_DATA_KEY,
+  DAYS_FORECAST,
+  DEFAULT_ERROR_MESSAGE,
+  SMOOTH,
+};
